@@ -26,7 +26,7 @@ Built around the patterns that have shipped across thousands of ads in productio
    ```
    chmod +x scripts/upload-images.sh scripts/upload-video.sh
    ```
-3. Get a Meta Marketing API access token. If you don't have one, see [the Meta API setup guide](https://theprompted.github.io/matandvics-funnel/meta-api-setup/) — it walks you through the Meta UI flow to generate one.
+3. Get a Meta Marketing API access token. Generate one by creating a System User in Meta Business Suite + an App in developers.facebook.com, then pressing Generate Token on the System User. ([Visual walkthrough](https://theprompted.github.io/matandvics-funnel/meta-api-setup/) covers the click-by-click.)
 4. Save the token in a `.env` file at your project root:
    ```
    META_ACCESS_TOKEN=EAC...your-token...

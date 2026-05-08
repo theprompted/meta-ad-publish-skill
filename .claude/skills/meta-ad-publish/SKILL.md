@@ -146,7 +146,7 @@ Explain inline:
 
 **Step 2 — Cost Cap amount**
 
-Ask for the cap. Help her with the formula:
+Ask for the cap. Help with the formula:
 
 > "A common starting cap is **AOV ÷ 2.2** (your average order value divided by 2.2). If your AOV is €70, that's a €32 cap. This roughly aligns with a 20% contribution-margin target after Meta's typical CPC + COGS. Want to use that, or set a custom cap?"
 
@@ -160,10 +160,10 @@ Convert: `roas_average_floor = floor * 10000` (so 1.5 → 15000).
 
 **Step 4 — Targeting + objective**
 
-For now, hardcode safe defaults and tell her what they are:
-- Geo: ask her ("US", "Germany", "Austria + Germany", custom country list)
+Use safe defaults and surface them to the user before creating:
+- Geo: ask the user (e.g. "US", "UK", "Canada", custom country list)
 - Age: 18–65 default
-- Objective: `OUTCOME_SALES` (this is what every successful BB/Maggie campaign uses)
+- Objective: `OUTCOME_SALES` (the standard for ecommerce purchase campaigns)
 - Optimization goal: `OFFSITE_CONVERSIONS` (Cost Cap) or `VALUE` (ROAS) — failure #9 in references
 - Billing event: `IMPRESSIONS`
 - Attribution: 7-day click-through
@@ -210,7 +210,7 @@ Show the proposal:
 Use AskUserQuestion. Always offer:
 - Approve as proposed
 - Merge into 1 ad (cap at 10 images — drop the rest, ask which)
-- Re-split manually (drop into a follow-up where she lists filenames per cluster)
+- Re-split manually (drop into a follow-up where the user lists filenames per cluster)
 
 ---
 
@@ -233,7 +233,7 @@ AskUserQuestion: "Do you have ad copy ready, or want me to draft?"
 2. For each cluster, write **5 distinct primary text angles** and **5 distinct headlines**. The ANGLES must be different — not 5 rephrasings of the same idea. Reference common angles: problem (status quo failing), proof (specific evidence), reframe (new way to see it), urgency (now or never), social (others made the switch).
 3. Show drafts. Offer: accept, regenerate, or edit specific lines.
 
-**"Mix" branch:** combine the two — ask her for the half she wants to write, draft the other half.
+**"Mix" branch:** combine the two — ask the user which half they want to write, draft the other half.
 
 In all branches, end at the validation gate: ≤5 primary, ≤5 headline, character limits checked.
 
@@ -241,7 +241,7 @@ In all branches, end at the validation gate: ≤5 primary, ≤5 headline, charac
 
 ### Phase 7 — Bid strategy assignment
 
-If the ad set she picked (or just created) is Cost Cap **and** there's a paired ROAS ad set in the same campaign (or a sibling ROAS campaign), ask:
+If the ad set the user picked (or just created) is Cost Cap **and** there's a paired ROAS ad set in the same campaign (or a sibling ROAS campaign), ask:
 
 ```
 "I see a matching ROAS ad set. Want me to also publish these ads into ROAS using the same creative IDs (saves Meta's learning, recommended)?"
