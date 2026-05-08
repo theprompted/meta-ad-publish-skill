@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+.claude/state/
+publish-runs/
+*.pyc
+__pycache__/
+.DS_Store
+/tmp/
+*.results.json
